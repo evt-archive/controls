@@ -1,4 +1,4 @@
-require_relative './sketch_init'
+require_relative './scripts_init'
 require 'controls/event_data/read'
 
 subject = Controls::EventData::Read::JSON
