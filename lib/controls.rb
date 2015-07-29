@@ -11,3 +11,6 @@ Settings.activate
 require 'casing'
 
 require 'event_store/client/http'
+
+require 'controls/time'
+require 'controls/id'
