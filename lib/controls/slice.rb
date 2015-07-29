@@ -1,3 +1,6 @@
+require 'controls'
+
+Telemetry::Logger.get(self).debug "Loading: #{__FILE__}"
 
 module Controls
   module Slice
