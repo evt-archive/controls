@@ -1,4 +1,5 @@
-require_relative './scripts_init'
+require_relative './event_data_init'
+
 require 'controls/event_data/batch'
 
 subject = Controls::EventData::Batch
