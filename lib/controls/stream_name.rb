@@ -1,6 +1,6 @@
 require 'controls'
 
-Telemetry::Logger.get(self).trace "Loading: #{__FILE__}"
+Telemetry::Logger.get(self).debug "Loading: #{__FILE__}"
 
 module Controls
   module StreamName

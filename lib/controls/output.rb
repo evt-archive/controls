@@ -1,6 +1,6 @@
 require 'controls'
 
-Telemetry::Logger.get(self).trace "Loaded: #{__FILE__}"
+Telemetry::Logger.get(self).debug "Loading: #{__FILE__}"
 
 module Controls
   def self.output(mod, meth, source=nil)

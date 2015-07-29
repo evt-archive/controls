@@ -1,18 +1,20 @@
 require 'controls'
 
-Telemetry::Logger.get(self).trace "Loading: #{__FILE__}"
+Telemetry::Logger.get(self).debug "Loading: #{__FILE__}"
 
-module Contols
+require 'controls/event_data/metadata'
+
+module Controls
   module EventData
     module Read
       module JSON
         def self.data(increment=nil, time=nil)
           increment ||= 0
 
-          reference_time = Controls::Time.reference
+          reference_time = Time.reference
           time ||= reference_time
 
-          id = Controls::ID.get(increment + 1)
+          id = ID.get(increment + 1)
 
           {
             'updated' => reference_time,
@@ -24,9 +26,7 @@ module Contols
                 'someAttribute' => 'some value',
                 'someTime' => time
               },
-              'metadata' => {
-                'someMetaAttribute' => 'some meta value'
-              }
+              'metadata' => EventData::Metadata::JSON.data
             },
             'links' => [
               {

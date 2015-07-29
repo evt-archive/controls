@@ -1,6 +1,7 @@
 require_relative './sketch_init'
+require 'controls/event_data/read'
 
-subject = Contols::EventData::Read::JSON
+subject = Controls::EventData::Read::JSON
 
 Controls.output subject, :data
 Controls.output subject, :text
