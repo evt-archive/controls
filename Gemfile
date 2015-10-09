@@ -13,7 +13,6 @@ prox_gem 'settings'
 prox_gem 'set_attributes'
 prox_gem 'virtual'
 prox_gem 'casing'
-prox_gem 'event_store_client_http'
 
 source 'https://rubygems.org'
 
@@ -24,4 +23,3 @@ gem 'minitest', '~> 5.5.0'
 gem 'minitest-spec-context', '0.0.3'
 
 gem 'rainbow'
-
