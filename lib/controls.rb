@@ -3,7 +3,7 @@ require 'json'
 require 'dependency'
 Dependency.activate
 require 'telemetry/logger'
-require 'uuid'
+require 'identifier/uuid'
 require 'clock'
 require 'settings'
 require 'schema'
