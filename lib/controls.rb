@@ -10,6 +10,8 @@ require 'schema'
 Settings.activate
 require 'casing'
 
+require 'identifier/uuid/controls'
+
 require 'controls/time'
 require 'controls/id'
 require 'controls/output'
