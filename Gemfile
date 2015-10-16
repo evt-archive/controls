@@ -1,5 +1,4 @@
 source 'https://gem.fury.io/obsidian/' do
-  gem 'dependency'
   gem 'telemetry-logger'
   gem 'identifier_uuid'
   gem 'clock'
