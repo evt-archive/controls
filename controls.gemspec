@@ -1,18 +1,20 @@
 # -*- encoding: utf-8 -*-
 Gem::Specification.new do |s|
   s.name = 'controls'
-  s.summary = 'Test controls'
   s.version = '0.1.0'
-  s.authors = ['']
+  s.summary = 'Test controls'
+  s.description = ' '
+
+  s.authors = ['Obsidian Software, Inc']
+  s.email = 'opensource@obsidianexchange.com'
+  s.homepage = 'https://github.com/obsidian-btc/controls'
+  s.licenses = ['MIT']
+
   s.require_paths = ['lib']
   s.files = Dir.glob('{lib}/**/*')
   s.platform = Gem::Platform::RUBY
-  s.required_ruby_version = '>= 2'
+  s.required_ruby_version = '>= 2.2.3'
 
-  s.add_runtime_dependency 'telemetry-logger'
   s.add_runtime_dependency 'identifier-uuid'
   s.add_runtime_dependency 'clock'
-  s.add_runtime_dependency 'settings'
-  s.add_runtime_dependency 'schema'
-  s.add_runtime_dependency 'casing'
 end

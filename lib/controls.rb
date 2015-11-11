@@ -1,6 +1,5 @@
 require 'json'
 
-require 'dependency'; Dependency.activate
 require 'identifier/uuid'
 require 'clock'
 
