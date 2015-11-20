@@ -1,5 +1,4 @@
 require 'json'
-require 'uri'
 
 require 'identifier/uuid'
 require 'clock'
