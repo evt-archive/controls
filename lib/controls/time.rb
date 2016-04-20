@@ -8,8 +8,10 @@ module Controls
     def self.reference; example; end
 
     module ISO8601
-      def self.example
-        Clock::UTC.iso8601(Raw.example)
+      def self.example(time=nil)
+        time ||= Raw.example
+
+        Clock::UTC.iso8601 time
       end
     end
 
