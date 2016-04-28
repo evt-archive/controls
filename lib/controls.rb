@@ -6,4 +6,5 @@ require 'clock'
 require 'identifier/uuid/controls'
 
 require 'controls/time'
+require 'controls/time/elapsed'
 require 'controls/id'
