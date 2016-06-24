@@ -5,5 +5,9 @@ module Controls
     def self.get(i=nil, increment: nil, sample: nil)
       Identifier::UUID::Controls::Incrementing.example(i, increment: increment, sample: sample)
     end
+
+    module Random
+      Identifier::UUID::Controls::Random.example
+    end
   end
 end
