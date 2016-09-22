@@ -13,22 +13,6 @@ TEXT
 require 'identifier/uuid'
 require 'identifier/uuid/controls'
 
-require 'clock'
-require 'clock/controls'
-
-module Controls
-  Time = Clock::Controls::Time
-
-  module ID
-    def self.get(*arguments)
-      Identifier::UUID::Controls::Incrementing.example(*arguments)
-    end
-    singleton_class.send :alias_method, :example, :get
-
-    module Random
-      def self.example
-        Identifier::UUID::Controls::Random.example
-      end
-    end
-  end
-end
+require 'controls/id'
+require 'controls/time'
+require 'controls/time/elapsed'
