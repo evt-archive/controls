@@ -1,5 +1,3 @@
-require 'controls'
-
 module Controls
   module Time
     def self.example

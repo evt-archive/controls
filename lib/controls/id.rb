@@ -1,11 +1,9 @@
-require 'controls'
-
 module Controls
   module ID
-    def self.get(i=nil, increment: nil, sample: nil)
-      Identifier::UUID::Controls::Incrementing.example(i, increment: increment, sample: sample)
+    def self.get(*arguments)
+      Identifier::UUID::Controls::Incrementing.example(*arguments)
     end
-    def self.example(i=nil, increment: nil, sample: nil); get(i=nil, increment: increment, sample: increment); end
+    singleton_class.send :alias_method, :example, :get
 
     module Random
       def self.example
